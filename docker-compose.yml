@@ -1,0 +1,31 @@
+version: '3.1'
+
+services:
+    
+    elasticsearch:
+      image: elasticsearch:8.7.0
+      ports:
+        - 9200:9200      
+      environment:
+        - discovery.type=single-node
+      #  - ES_JAVA_OPTS=-Xms1g -Xmx1g
+        - xpack.security.enabled=false
+      #volumes:
+      #  - ./es-data:/usr/share/elasticsearch/data
+      #networks:
+      #  - bdi_net
+
+    jupyter:
+     image: jupyter/minimal-notebook
+     ports:
+       - 8888:8888
+     #volumes:
+     #  - "./notebooks:/home/jovyan/work/notebooks"
+     command: ["start-notebook.sh","--NotebookApp.token=''","--NotebookApp.password=''"]
+     #networks:
+     #  - bdi_net
+
+#networks:
+#    bdi_net:
+#      external: true
+
