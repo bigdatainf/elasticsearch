@@ -26,7 +26,7 @@ This command downloads the Elasticsearch image (if not already downloaded) and s
 
 4. **Verify Execution:**
 - Elasticsearch: Verify by visiting [http://localhost:9200](http://localhost:9200) in your browser or using a command-line client like `curl`.
-- Jupyter Notebook: Access the notebook by visiting [http://localhost:8000](http://localhost:8000) to interact with Elasticsearch.
+- Jupyter Notebook: Access the notebook by visiting [http://localhost:8888](http://localhost:8888) to interact with Elasticsearch.
 
 ## Elasticsearch Documentation
 
