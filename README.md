@@ -14,7 +14,7 @@ To start the Elasticsearch container, follow these steps:
 
 1. **Clone the Repository:**
 ````   
-   git clone https://github.com/bigdatainf/Jupyter.git
+   git clone https://github.com/bigdatainf/elasticsearch.git
    cd elasticsearch
 ````
 
